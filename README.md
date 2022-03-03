@@ -1,6 +1,6 @@
 # Codes for Quantitative uncertainty estimation in biophysical models of fish larval connectivity in the Florida Keys
 
-This repository contains the post-processing codes necessary for the uncertainty analysis performed in _Chaput R., Sochala P., Miron P., Kourafalou V.H., Iskandarani M., 2022. Quantitative uncertainty estimation in biophysical models of fish larval connectivity in the Florida Keys. Submitted to ICES Journal of Marine Science._
+This repository contains the post-processing codes necessary for the uncertainty analysis performed in _Chaput R., Sochala P., Miron P., Kourafalou V.H., Iskandarani M., 2022. Quantitative uncertainty estimation in biophysical models of fish larval connectivity in the Florida Keys. ICES Journal of Marine Science._ https://doi.org/10.1093/icesjms/fsac021
 
 In this study, we investigate the impacts of seven uncertain biological parameters on simulated larval connectivity in the Florida Keys using polynomial chaos surrogate. These parameters describe biological traits and behaviors --such as mortality, swimming abilities and orientation-- and modulate larval settlement as well as dispersal forecasts. However, these parameters are poorly constrained by observations and vary naturally between individual larvae. In the study, we characterize the input uncertainties with probability density functions informed by previous studies of Abudefduf saxatilis. The parametric domain is sampled via ensemble calculations, then a polynomial-based surrogate is built to explicitly approximate the dependence of the model outputs on the uncertain model inputs which enables a robust statistical analysis of uncertainties. This approach allows the computation of probabilistic dispersal kernels that are further analyzed to understand the impact of the parameter uncertainties. 
 
@@ -8,4 +8,4 @@ We share here a Matlab code that allows to replicate the method presented in the
 
 The surrogates computed here are specific to our study: we considered 5 uncertain input parameters, uniformly distributed on their ranges, and used a sparse matrix to identify our sampling points.
 
-The biophysical model and specific orientation module used to obtain the samples are available at https://github.com/RomainChaput/connectivity-modeling-system 
+The biophysical model and specific orientation module used to obtain the samples are available at https://github.com/RomainChaput/connectivity-modeling-system
